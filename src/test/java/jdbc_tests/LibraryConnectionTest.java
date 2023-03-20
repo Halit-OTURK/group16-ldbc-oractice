@@ -1,6 +1,6 @@
 package jdbc_tests;
 
-import Utilities.DB_Utilities;
+import Utilities.DBUtils;
 import org.junit.jupiter.api.Test;
 
 import java.sql.*;
@@ -34,8 +34,8 @@ public class LibraryConnectionTest {
         String dbUsername = "library1_client";
         String dbPassword = "WVF4NdGXCKHeE6VQ";
 
-        DB_Utilities.createConnection(dbUrl,dbUsername,dbPassword);
+        DBUtils.createConnection(dbUrl,dbUsername,dbPassword);
 
-        DB_Utilities.destroy();
+        DBUtils.destroy();
     }
 }
